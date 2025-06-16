@@ -80,4 +80,20 @@ I learned what a `rem` is and why it's better than pixels for scalable design. I
 
 I learned that you can assign properties to the last child of a table (or any parent element that contains multiple children).
 
-I learned that you can effectively ignore the padding of a parent element using negative margin. This is done by offsetting the padding using
+I learned that you can effectively ignore the padding of a parent element using negative margin.
+
+```css
+@media (max-width: 800px) {
+    main {
+        max-width: 100vw;
+        border-radius: 0;
+    }
+    body {
+        margin: 0;
+    }
+    img {
+        margin: -41px -41px 0 -41px;
+        width: 100vw;
+    }
+}
+```
